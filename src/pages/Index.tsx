@@ -37,7 +37,7 @@ const blogPosts = [
 ];
 
 const navLinks = [
-  { href: "#about", label: "О студии" },
+  { href: "#about", label: "О компании" },
   { href: "#services", label: "Услуги" },
   { href: "#portfolio", label: "Портфолио" },
   { href: "#process", label: "Процесс" },
@@ -167,18 +167,18 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             <div>
-              <p className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-4">О студии</p>
+              <p className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-4">О компании</p>
               <h2 className="font-display text-4xl lg:text-5xl font-light leading-tight mb-8 line-accent">
                 Мы делаем мебель,<br/>которая остаётся на годы
               </h2>
               <p className="font-body text-base text-muted-foreground font-light leading-relaxed mb-6">
-                Компания «Доктор Мебелис» работает в Екатеринбурге с 2012 года. За это время мы воплотили более 1400 проектов — от компактных кухонь в студиях до мебели для загородных домов.
+                Компания «Доктор Мебелис» работает в Екатеринбурге с 2015 года. За это время мы воплотили более 1400 проектов — от компактных кухонь в студиях до мебели для загородных домов.
               </p>
               <p className="font-body text-base text-muted-foreground font-light leading-relaxed mb-10">
-                Собственное производство площадью 2000 м² позволяет нам контролировать каждый этап — от раскроя плиты до последнего болта при монтаже.
+                Собственное производство площадью 1000 м² позволяет нам контролировать каждый этап — от раскроя плиты до последнего болта при монтаже.
               </p>
               <div className="grid grid-cols-2 gap-6">
-                {[["Гарантия", "3 года на всю продукцию"], ["Производство", "Собственный цех в Екатеринбурге"], ["Сроки", "От 3 недель"], ["Замер", "Бесплатно по всему городу"]].map(([t, d]) => (
+                {[["Гарантия", "2 года на всю продукцию"], ["Производство", "Собственный цех в Екатеринбурге"], ["Сроки", "От 25 рабочих дней"], ["Замер", "Бесплатно по всему городу"]].map(([t, d]) => (
                   <div key={t} className="border-t border-border pt-4">
                     <div className="font-display text-lg text-gold font-light mb-1">{t}</div>
                     <div className="font-body text-sm text-muted-foreground">{d}</div>
@@ -189,7 +189,7 @@ export default function Index() {
             <div className="relative">
               <img src={WARDROBE_IMG} alt="О студии Арт-Мебель" className="w-full h-[500px] object-cover" />
               <div className="absolute -bottom-6 -left-6 bg-card border border-border p-6 hidden lg:block">
-                <div className="font-display text-4xl text-gold font-light">12+</div>
+                <div className="font-display text-4xl text-gold font-light">10+</div>
                 <div className="font-body text-xs text-muted-foreground tracking-wide mt-1">лет опыта</div>
               </div>
             </div>
@@ -509,7 +509,7 @@ export default function Index() {
                   <span className="font-body text-[9px] tracking-[0.3em] uppercase text-muted-foreground">МЕБЕЛИС</span>
                 </div>
               </div>
-              <p className="font-body text-xs text-muted-foreground max-w-xs">Производство корпусной мебели на заказ. Екатеринбург, с 2012 года.</p>
+              <p className="font-body text-xs text-muted-foreground max-w-xs">Производство корпусной мебели на заказ. Екатеринбург, с 2015 года.</p>
             </div>
 
             <div className="flex flex-wrap gap-6">
