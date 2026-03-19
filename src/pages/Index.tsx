@@ -519,11 +519,15 @@ export default function Index() {
             </div>
 
             <div className="flex gap-3">
-              {["Instagram", "MessageCircle", "Send"].map((icon, i) => (
-                <a key={i} href="#" className="w-9 h-9 border border-border flex items-center justify-center hover:border-gold transition-colors duration-200">
-                  <Icon name={icon} size={14} className="text-muted-foreground" />
-                </a>
-              ))}
+              <a href="#" className="w-9 h-9 border border-border flex items-center justify-center hover:border-gold transition-colors duration-200" title="VK">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-muted-foreground"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.862-.525-2.049-1.714-1.033-1.01-1.49-.9-1.744.1 0 0-.05.56-.05 1.274 0 .33-.105.53-.975.53-1.395 0-2.94-.85-4.028-2.44C7.193 12.55 6.5 10.15 6.5 9.5c0-.33.09-.64.42-.64h1.744c.41 0 .562.2.718.66.78 2.26 2.088 4.24 2.627 4.24.203 0 .296-.093.296-.604V11c-.063-1.087-.64-1.18-.64-1.568 0-.218.177-.44.465-.44h2.744c.35 0 .473.185.473.584v3.14c0 .348.155.473.254.473.202 0 .37-.125.74-.497 1.147-1.285 1.963-3.264 1.963-3.264.108-.22.295-.424.705-.424h1.744c.524 0 .636.27.524.637-.217.992-2.326 3.986-2.326 3.986-.184.296-.253.427 0 .762.184.252.787.787 1.19 1.262.737.85 1.302 1.562 1.452 2.054.156.484-.088.73-.572.73z"/></svg>
+              </a>
+              <a href="#" className="w-9 h-9 border border-border flex items-center justify-center hover:border-gold transition-colors duration-200" title="MAX">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-muted-foreground"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
+              </a>
+              <a href="mailto:zakaz@dkub.ru" className="w-9 h-9 border border-border flex items-center justify-center hover:border-gold transition-colors duration-200" title="Email">
+                <Icon name="Mail" size={14} className="text-muted-foreground" />
+              </a>
             </div>
           </div>
 
