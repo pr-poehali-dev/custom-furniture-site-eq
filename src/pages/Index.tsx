@@ -503,7 +503,7 @@ export default function Index() {
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
             <div>
               <div className="flex items-center gap-3 mb-3">
-                <img src="https://cdn.poehali.dev/projects/d39aeedb-ca02-475a-9633-00a6f3576ef3/files/a2ca0d6a-bdfd-4ba5-922e-b60b3c467b7b.jpg" alt="Доктор Мебелис" className="w-9 h-9 object-cover rounded-sm" />
+                <img src="https://cdn.poehali.dev/projects/d39aeedb-ca02-475a-9633-00a6f3576ef3/bucket/3599c748-062b-4fa1-b301-2708c1d84e2c.png" alt="Доктор Мебелис" className="w-9 h-9 object-contain" style={{filter: 'brightness(0) invert(1)'}} />
                 <div className="flex flex-col">
                   <span className="font-display text-xl font-light tracking-widest text-gold leading-none">ДОКТОР</span>
                   <span className="font-body text-[9px] tracking-[0.3em] uppercase text-muted-foreground">МЕБЕЛИС</span>
