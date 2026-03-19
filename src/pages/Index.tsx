@@ -85,8 +85,8 @@ export default function Index() {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-background/95 backdrop-blur-md border-b border-border" : "bg-transparent"}`}>
         <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
           <a href="#" className="flex flex-col">
-            <span className="font-display text-2xl font-light tracking-widest text-gold leading-none">АРТ</span>
-            <span className="font-body text-[9px] tracking-[0.3em] uppercase text-muted-foreground">МЕБЕЛЬ</span>
+            <span className="font-display text-xl font-light tracking-widest text-gold leading-none">ДОКТОР</span>
+            <span className="font-body text-[9px] tracking-[0.3em] uppercase text-muted-foreground">МЕБЕЛИС</span>
           </a>
 
           <div className="hidden lg:flex items-center gap-8">
@@ -169,7 +169,7 @@ export default function Index() {
                 Мы делаем мебель,<br/>которая остаётся на годы
               </h2>
               <p className="font-body text-base text-muted-foreground font-light leading-relaxed mb-6">
-                Студия «Арт-Мебель» работает в Екатеринбурге с 2012 года. За это время мы воплотили более 1400 проектов — от компактных кухонь в студиях до мебели для загородных домов.
+                Компания «Доктор Мебелис» работает в Екатеринбурге с 2012 года. За это время мы воплотили более 1400 проектов — от компактных кухонь в студиях до мебели для загородных домов.
               </p>
               <p className="font-body text-base text-muted-foreground font-light leading-relaxed mb-10">
                 Собственное производство площадью 2000 м² позволяет нам контролировать каждый этап — от раскроя плиты до последнего болта при монтаже.
@@ -500,8 +500,8 @@ export default function Index() {
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
             <div>
               <div className="flex flex-col mb-3">
-                <span className="font-display text-2xl font-light tracking-widest text-gold leading-none">АРТ</span>
-                <span className="font-body text-[9px] tracking-[0.3em] uppercase text-muted-foreground">МЕБЕЛЬ</span>
+                <span className="font-display text-xl font-light tracking-widest text-gold leading-none">ДОКТОР</span>
+                <span className="font-body text-[9px] tracking-[0.3em] uppercase text-muted-foreground">МЕБЕЛИС</span>
               </div>
               <p className="font-body text-xs text-muted-foreground max-w-xs">Производство корпусной мебели на заказ. Екатеринбург, с 2012 года.</p>
             </div>
@@ -522,7 +522,7 @@ export default function Index() {
           </div>
 
           <div className="mt-10 pt-6 border-t border-border flex flex-col lg:flex-row justify-between gap-2">
-            <p className="font-body text-xs text-muted-foreground">© 2026 Арт-Мебель. Все права защищены.</p>
+            <p className="font-body text-xs text-muted-foreground">© 2026 Доктор Мебелис. Все права защищены.</p>
             <p className="font-body text-xs text-muted-foreground">ИНН 6671234567 · г. Екатеринбург</p>
           </div>
         </div>
