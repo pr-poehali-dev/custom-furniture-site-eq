@@ -251,7 +251,7 @@ export default function Index() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {filteredPortfolio.map((p, i) => (
               <div key={i} className="portfolio-card aspect-[4/3] cursor-pointer overflow-hidden">
-                <img src={p.img} alt={p.title} className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110" />
+                <img src={p.img} alt={p.title} className="w-full h-full object-cover scale-110 transition-transform duration-500 ease-in-out group-hover:scale-100" />
                 <div className="overlay" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 z-10 opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100">
                   <div className="font-body text-xs tracking-widest uppercase text-gold mb-1">{p.category} · {p.area}</div>
