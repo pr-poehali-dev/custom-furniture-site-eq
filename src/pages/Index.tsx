@@ -519,7 +519,7 @@ export default function Index() {
             </div>
 
             <div className="flex gap-3">
-              <a href="#" className="w-9 h-9 border border-border flex items-center justify-center hover:border-gold transition-colors duration-200" title="VK">
+              <a href="https://vk.com/doktormebelis" target="_blank" rel="noopener noreferrer" className="w-9 h-9 border border-border flex items-center justify-center hover:border-gold transition-colors duration-200" title="VK">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" className="text-muted-foreground"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.862-.525-2.049-1.714-1.033-1.01-1.49-.9-1.744.1 0 0-.05.56-.05 1.274 0 .33-.105.53-.975.53-1.395 0-2.94-.85-4.028-2.44C7.193 12.55 6.5 10.15 6.5 9.5c0-.33.09-.64.42-.64h1.744c.41 0 .562.2.718.66.78 2.26 2.088 4.24 2.627 4.24.203 0 .296-.093.296-.604V11c-.063-1.087-.64-1.18-.64-1.568 0-.218.177-.44.465-.44h2.744c.35 0 .473.185.473.584v3.14c0 .348.155.473.254.473.202 0 .37-.125.74-.497 1.147-1.285 1.963-3.264 1.963-3.264.108-.22.295-.424.705-.424h1.744c.524 0 .636.27.524.637-.217.992-2.326 3.986-2.326 3.986-.184.296-.253.427 0 .762.184.252.787.787 1.19 1.262.737.85 1.302 1.562 1.452 2.054.156.484-.088.73-.572.73z"/></svg>
               </a>
               <a href="#" className="w-9 h-9 border border-border flex items-center justify-center hover:border-gold transition-colors duration-200" title="MAX">
