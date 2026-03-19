@@ -83,12 +83,12 @@ export default function Index() {
 
       {/* NAVBAR */}
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-background/95 backdrop-blur-md border-b border-border" : "bg-transparent"}`}>
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
+        <div className="max-w-7xl mx-auto lg:px-12 flex items-center justify-between h-20 py-[1px] px-0">
           <a href="#" className="flex items-center gap-3">
-            <img src="https://cdn.poehali.dev/projects/d39aeedb-ca02-475a-9633-00a6f3576ef3/bucket/3599c748-062b-4fa1-b301-2708c1d84e2c.png" alt="Доктор Мебелис" className="w-12 h-12 object-contain" style={{filter: 'brightness(0) invert(1)'}} />
+            <img src="https://cdn.poehali.dev/projects/d39aeedb-ca02-475a-9633-00a6f3576ef3/bucket/3599c748-062b-4fa1-b301-2708c1d84e2c.png" alt="Доктор Мебелис" className="w-12 h-12 object-contain mx-0 my-0 py-0 px-0 rounded-none" style={{filter: 'brightness(0) invert(1)'}} />
             <div className="flex flex-col">
-              <span className="font-display text-xl font-light tracking-widest text-gold leading-none">ДОКТОР</span>
-              <span className="font-body text-[9px] tracking-[0.3em] uppercase text-muted-foreground">МЕБЕЛИС</span>
+              <span className="font-display font-light tracking-widest text-gold leading-none mx-0 px-0 text-base">ДОКТОР</span>
+              <span className="font-body tracking-[0.3em] uppercase text-muted-foreground mx-[5px] my-[5px] text-[0.56rem]">МЕБЕЛИС</span>
             </div>
           </a>
 
@@ -103,7 +103,7 @@ export default function Index() {
             <span className="font-body text-sm tracking-wide">+7 967 85 89 131</span>
           </a>
 
-          <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden text-foreground p-2">
+          <button className="lg:hidden text-foreground p-2 text-base" onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden text-foreground p-2">
             <Icon name={menuOpen ? "X" : "Menu"} size={22} />
           </button>
         </div>
