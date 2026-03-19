@@ -83,16 +83,16 @@ export default function Index() {
 
       {/* NAVBAR */}
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-background/95 backdrop-blur-md border-b border-border" : "bg-transparent"}`}>
-        <div className="max-w-7xl mx-auto lg:px-12 flex items-center justify-between h-20 py-[1px] px-0">
-          <a href="#" className="flex items-center gap-3">
-            <img src="https://cdn.poehali.dev/projects/d39aeedb-ca02-475a-9633-00a6f3576ef3/bucket/3599c748-062b-4fa1-b301-2708c1d84e2c.png" alt="Доктор Мебелис" className="w-12 h-12 object-contain mx-0 my-0 py-0 px-0 rounded-none" style={{filter: 'brightness(0) invert(1)'}} />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between h-16 sm:h-20">
+          <a href="#" className="flex items-center gap-2 sm:gap-3">
+            <img src="https://cdn.poehali.dev/projects/d39aeedb-ca02-475a-9633-00a6f3576ef3/bucket/3599c748-062b-4fa1-b301-2708c1d84e2c.png" alt="Доктор Мебелис" className="w-10 h-10 sm:w-12 sm:h-12 object-contain" style={{filter: 'brightness(0) invert(1)'}} />
             <div className="flex flex-col">
-              <span className="font-display font-light tracking-widest text-gold leading-none mx-0 px-0 text-base">ДОКТОР</span>
-              <span className="font-body tracking-[0.3em] uppercase text-muted-foreground mx-[5px] my-[5px] text-[0.56rem]">МЕБЕЛИС</span>
+              <span className="font-display font-light tracking-widest text-gold leading-none text-sm sm:text-base">ДОКТОР</span>
+              <span className="font-body tracking-[0.3em] uppercase text-muted-foreground text-[0.5rem] sm:text-[0.56rem]">МЕБЕЛИС</span>
             </div>
           </a>
 
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-4 xl:gap-8">
             {navLinks.map(l => (
               <a key={l.href} href={l.href} className="nav-link">{l.label}</a>
             ))}
@@ -103,15 +103,15 @@ export default function Index() {
             <span className="font-body text-sm tracking-wide">+7 967 85 89 131</span>
           </a>
 
-          <button className="lg:hidden text-foreground p-2 text-base" onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden text-foreground p-2">
+          <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden text-foreground p-2">
             <Icon name={menuOpen ? "X" : "Menu"} size={22} />
           </button>
         </div>
 
         {menuOpen && (
-          <div className="lg:hidden bg-background/98 border-t border-border px-6 py-6 flex flex-col gap-5">
+          <div className="lg:hidden bg-background/98 border-t border-border px-4 sm:px-6 py-4 sm:py-6 flex flex-col gap-4">
             {navLinks.map(l => (
-              <a key={l.href} href={l.href} className="nav-link text-base" onClick={() => setMenuOpen(false)}>{l.label}</a>
+              <a key={l.href} href={l.href} className="nav-link text-sm sm:text-base" onClick={() => setMenuOpen(false)}>{l.label}</a>
             ))}
             <a href="tel:+79678589131" className="text-gold font-body text-sm mt-2">+7 967 85 89 131</a>
           </div>
@@ -119,27 +119,27 @@ export default function Index() {
       </nav>
 
       {/* HERO */}
-      <section className="relative h-screen min-h-[700px] flex items-end grain-overlay" id="home">
+      <section className="relative h-screen min-h-[600px] sm:min-h-[700px] flex items-end grain-overlay" id="home">
         <div className="absolute inset-0 overflow-hidden">
           <img src={HERO_IMG} alt="Корпусная мебель на заказ" className="w-full h-full object-cover scale-110" />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-background/30 sm:from-background/90 sm:via-background/60 sm:to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-background/20" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pb-20 lg:pb-28 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pb-16 sm:pb-20 lg:pb-28 w-full">
           <div className="max-w-2xl">
-            <p className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-6 animate-fade-in" style={{animationDelay: "0.2s", animationFillMode: "both"}}>
+            <p className="font-body text-[10px] sm:text-xs tracking-[0.2em] sm:tracking-[0.3em] uppercase text-gold mb-4 sm:mb-6 animate-fade-in" style={{animationDelay: "0.2s", animationFillMode: "both"}}>
               Производство корпусной мебели · Екатеринбург
             </p>
-            <h1 className="font-display text-5xl lg:text-7xl xl:text-8xl font-light leading-[1.05] mb-8 animate-fade-up" style={{animationDelay: "0.4s", animationFillMode: "both"}}>
+            <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light leading-[1.05] mb-6 sm:mb-8 animate-fade-up" style={{animationDelay: "0.4s", animationFillMode: "both"}}>
               Мебель,<br/>
               созданная<br/>
               <em className="text-gold not-italic">для вас</em>
             </h1>
-            <p className="font-body text-base lg:text-lg text-muted-foreground font-light leading-relaxed mb-10 max-w-lg animate-fade-up" style={{animationDelay: "0.6s", animationFillMode: "both"}}>
+            <p className="font-body text-sm sm:text-base lg:text-lg text-muted-foreground font-light leading-relaxed mb-8 sm:mb-10 max-w-lg animate-fade-up" style={{animationDelay: "0.6s", animationFillMode: "both"}}>
               Проектируем и производим корпусную мебель на заказ. Кухни, гардеробные, гостиные — от замера до монтажа.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{animationDelay: "0.8s", animationFillMode: "both"}}>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-up" style={{animationDelay: "0.8s", animationFillMode: "both"}}>
               <a href="#contacts" className="btn-gold inline-block text-center">Получить консультацию</a>
               <a href="#portfolio" className="btn-outline-gold inline-block text-center">Смотреть портфолио</a>
             </div>
@@ -147,13 +147,13 @@ export default function Index() {
         </div>
 
         <div className="absolute bottom-0 right-0 left-0 z-10">
-          <div className="max-w-7xl mx-auto px-6 lg:px-12">
-            <div className="hidden lg:flex justify-end">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div className="flex justify-center sm:justify-end">
               <div className="bg-card/90 backdrop-blur border border-border flex">
-                {[["12+", "лет на рынке"], ["1400+", "проектов"], ["98%", "клиентов довольны"]].map(([val, label], i) => (
-                  <div key={i} className={`px-8 py-5 text-center ${i < 2 ? "border-r border-border" : ""}`}>
-                    <div className="font-display text-2xl text-gold font-light">{val}</div>
-                    <div className="font-body text-xs text-muted-foreground tracking-wide mt-1">{label}</div>
+                {[["12+", "лет на рынке"], ["1400+", "проектов"], ["98%", "довольны"]].map(([val, label], i) => (
+                  <div key={i} className={`px-4 sm:px-8 py-3 sm:py-5 text-center ${i < 2 ? "border-r border-border" : ""}`}>
+                    <div className="font-display text-lg sm:text-2xl text-gold font-light">{val}</div>
+                    <div className="font-body text-[10px] sm:text-xs text-muted-foreground tracking-wide mt-1">{label}</div>
                   </div>
                 ))}
               </div>
@@ -163,31 +163,31 @@ export default function Index() {
       </section>
 
       {/* ABOUT */}
-      <section id="about" className="py-24 lg:py-36">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+      <section id="about" className="py-16 sm:py-24 lg:py-36">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="grid lg:grid-cols-2 gap-10 sm:gap-16 lg:gap-24 items-center">
             <div>
               <p className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-4">О компании</p>
-              <h2 className="font-display text-4xl lg:text-5xl font-light leading-tight mb-8 line-accent">
+              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light leading-tight mb-6 sm:mb-8 line-accent">
                 Мы делаем мебель,<br/>которая остаётся на годы
               </h2>
-              <p className="font-body text-base text-muted-foreground font-light leading-relaxed mb-6">
+              <p className="font-body text-sm sm:text-base text-muted-foreground font-light leading-relaxed mb-4 sm:mb-6">
                 Компания «Доктор Мебелис» работает в Екатеринбурге с 2015 года. За это время мы воплотили более 1400 проектов — от компактных кухонь в студиях до мебели для загородных домов.
               </p>
-              <p className="font-body text-base text-muted-foreground font-light leading-relaxed mb-10">
+              <p className="font-body text-sm sm:text-base text-muted-foreground font-light leading-relaxed mb-8 sm:mb-10">
                 Собственное производство площадью 1000 м² позволяет нам контролировать каждый этап — от раскроя плиты до последнего болта при монтаже.
               </p>
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-2 gap-4 sm:gap-6">
                 {[["Гарантия", "2 года на всю продукцию"], ["Производство", "Собственный цех в Екатеринбурге"], ["Сроки", "От 25 рабочих дней"], ["Замер", "Бесплатно по всему городу"]].map(([t, d]) => (
-                  <div key={t} className="border-t border-border pt-4">
-                    <div className="font-display text-lg text-gold font-light mb-1">{t}</div>
-                    <div className="font-body text-sm text-muted-foreground">{d}</div>
+                  <div key={t} className="border-t border-border pt-3 sm:pt-4">
+                    <div className="font-display text-base sm:text-lg text-gold font-light mb-1">{t}</div>
+                    <div className="font-body text-xs sm:text-sm text-muted-foreground">{d}</div>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="relative">
-              <img src={WARDROBE_IMG} alt="О студии Арт-Мебель" className="w-full h-[500px] object-cover scale-110" />
+            <div className="relative overflow-hidden">
+              <img src={WARDROBE_IMG} alt="О студии Арт-Мебель" className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover scale-110" />
               <div className="absolute -bottom-6 -left-6 bg-card border border-border p-6 hidden lg:block">
                 <div className="font-display text-4xl text-gold font-light">10+</div>
                 <div className="font-body text-xs text-muted-foreground tracking-wide mt-1">лет опыта</div>
@@ -200,16 +200,16 @@ export default function Index() {
       <div className="section-divider" />
 
       {/* SERVICES */}
-      <section id="services" className="py-24 lg:py-36">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="text-center mb-16">
+      <section id="services" className="py-16 sm:py-24 lg:py-36">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="text-center mb-10 sm:mb-16">
             <p className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-4">Что мы делаем</p>
-            <h2 className="font-display text-4xl lg:text-5xl font-light">Наши услуги</h2>
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light">Наши услуги</h2>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
             {services.map((s) => (
-              <div key={s.title} className="bg-background p-8 lg:p-10 hover-lift group cursor-pointer">
+              <div key={s.title} className="bg-background p-6 sm:p-8 lg:p-10 hover-lift group cursor-pointer">
                 <div className="w-12 h-12 border border-border flex items-center justify-center mb-6 group-hover:border-gold transition-colors duration-300">
                   <Icon name={s.icon} size={20} className="text-muted-foreground group-hover:text-gold transition-colors duration-300" />
                 </div>
@@ -228,19 +228,19 @@ export default function Index() {
       <div className="section-divider" />
 
       {/* PORTFOLIO */}
-      <section id="portfolio" className="py-24 lg:py-36">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-6">
+      <section id="portfolio" className="py-16 sm:py-24 lg:py-36">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-8 sm:mb-12 gap-4 sm:gap-6">
             <div>
               <p className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-4">Наши работы</p>
-              <h2 className="font-display text-4xl lg:text-5xl font-light">Портфолио</h2>
+              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light">Портфолио</h2>
             </div>
             <div className="flex flex-wrap gap-2">
               {filters.map(f => (
                 <button
                   key={f}
                   onClick={() => setActiveFilter(f)}
-                  className={`font-body text-xs tracking-wide uppercase px-4 py-2 border transition-all duration-200 ${activeFilter === f ? "border-gold text-gold" : "border-border text-muted-foreground hover:border-gold/50"}`}
+                  className={`font-body text-[10px] sm:text-xs tracking-wide uppercase px-3 sm:px-4 py-2 border transition-all duration-200 ${activeFilter === f ? "border-gold text-gold" : "border-border text-muted-foreground hover:border-gold/50"}`}
                 >
                   {f}
                 </button>
@@ -248,7 +248,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
             {filteredPortfolio.map((p, i) => (
               <div key={i} className="portfolio-card aspect-[4/3] cursor-pointer overflow-hidden">
                 <img src={p.img} alt={p.title} className="w-full h-full object-cover scale-110 transition-transform duration-500 ease-in-out group-hover:scale-100" />
@@ -270,14 +270,14 @@ export default function Index() {
       <div className="section-divider" />
 
       {/* PROCESS */}
-      <section id="process" className="py-24 lg:py-36 bg-card">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="text-center mb-16">
+      <section id="process" className="py-16 sm:py-24 lg:py-36 bg-card">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="text-center mb-10 sm:mb-16">
             <p className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-4">Как мы работаем</p>
-            <h2 className="font-display text-4xl lg:text-5xl font-light">Процесс создания</h2>
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light">Процесс создания</h2>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
             {process.map((p, i) => (
               <div key={i} className="relative pt-8">
                 <div className="step-number">{p.step}</div>
@@ -295,7 +295,7 @@ export default function Index() {
             ))}
           </div>
 
-          <div className="mt-16 text-center">
+          <div className="mt-10 sm:mt-16 text-center">
             <a href="#contacts" className="btn-gold inline-block">Начать проект</a>
           </div>
         </div>
@@ -304,23 +304,23 @@ export default function Index() {
       <div className="section-divider" />
 
       {/* CALCULATOR */}
-      <section id="calculator" className="py-24 lg:py-36">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
+      <section id="calculator" className="py-16 sm:py-24 lg:py-36">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="grid lg:grid-cols-2 gap-10 sm:gap-16 items-start">
             <div>
               <p className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-4">Онлайн-инструмент</p>
-              <h2 className="font-display text-4xl lg:text-5xl font-light leading-tight mb-6">
+              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light leading-tight mb-6">
                 Рассчитайте<br/>стоимость
               </h2>
-              <p className="font-body text-base text-muted-foreground font-light leading-relaxed mb-8">
+              <p className="font-body text-sm sm:text-base text-muted-foreground font-light leading-relaxed mb-8">
                 Получите предварительный расчёт за 30 секунд. Точная стоимость — после выезда замерщика.
               </p>
-              <div className="border border-border p-1">
+              <div className="border border-border p-1 hidden sm:block overflow-hidden">
                 <img src={LIVING_IMG} alt="Пример мебели" className="w-full h-60 object-cover opacity-70 scale-110" />
               </div>
             </div>
 
-            <div className="bg-card border border-border p-8 lg:p-10">
+            <div className="bg-card border border-border p-6 sm:p-8 lg:p-10">
               <h3 className="font-display text-2xl font-light mb-8">Параметры заказа</h3>
 
               <div className="space-y-5">
@@ -350,7 +350,7 @@ export default function Index() {
 
                 <div>
                   <label className="font-body text-xs tracking-widest uppercase text-muted-foreground block mb-2">Материал фасадов</label>
-                  <div className="grid grid-cols-3 gap-2">
+                  <div className="grid grid-cols-3 gap-1 sm:gap-2">
                     {[["ldsp", "ЛДСП"], ["mdf", "МДФ / Эмаль"], ["massiv", "Массив"]].map(([val, label]) => (
                       <button
                         key={val}
@@ -381,19 +381,19 @@ export default function Index() {
       <div className="section-divider" />
 
       {/* BLOG */}
-      <section id="blog" className="py-24 lg:py-36 bg-card">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-4">
+      <section id="blog" className="py-16 sm:py-24 lg:py-36 bg-card">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-8 sm:mb-12 gap-4">
             <div>
               <p className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-4">Статьи и советы</p>
-              <h2 className="font-display text-4xl lg:text-5xl font-light">Блог</h2>
+              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light">Блог</h2>
             </div>
             <button className="btn-outline-gold self-start">Все статьи</button>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {blogPosts.map((post, i) => (
-              <article key={i} className="bg-background border border-border p-8 hover-lift cursor-pointer group">
+              <article key={i} className="bg-background border border-border p-5 sm:p-8 hover-lift cursor-pointer group">
                 <div className="flex items-center gap-3 mb-6">
                   <span className="font-body text-xs px-3 py-1 border border-gold/40 text-gold">{post.tag}</span>
                   <span className="font-body text-xs text-muted-foreground">{post.read} чтения</span>
@@ -412,15 +412,15 @@ export default function Index() {
       <div className="section-divider" />
 
       {/* CONTACTS + FORM */}
-      <section id="contacts" className="py-24 lg:py-36">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
+      <section id="contacts" className="py-16 sm:py-24 lg:py-36">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="grid lg:grid-cols-2 gap-10 sm:gap-16 lg:gap-24">
             <div>
               <p className="font-body text-xs tracking-[0.3em] uppercase text-gold mb-4">Свяжитесь с нами</p>
-              <h2 className="font-display text-4xl lg:text-5xl font-light leading-tight mb-8">
+              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-light leading-tight mb-6 sm:mb-8">
                 Начните свой<br/>проект сегодня
               </h2>
-              <p className="font-body text-base text-muted-foreground font-light leading-relaxed mb-12">
+              <p className="font-body text-sm sm:text-base text-muted-foreground font-light leading-relaxed mb-8 sm:mb-12">
                 Оставьте заявку — наш дизайнер свяжется с вами в течение 30 минут и ответит на все вопросы.
               </p>
 
@@ -444,9 +444,9 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="bg-card border border-border p-8 lg:p-10">
+            <div className="bg-card border border-border p-5 sm:p-8 lg:p-10">
               {formSent ? (
-                <div className="flex flex-col items-center justify-center h-full min-h-[400px] text-center">
+                <div className="flex flex-col items-center justify-center h-full min-h-[300px] sm:min-h-[400px] text-center">
                   <div className="w-16 h-16 border border-gold flex items-center justify-center mb-6">
                     <Icon name="Check" size={28} className="text-gold" />
                   </div>
@@ -498,9 +498,9 @@ export default function Index() {
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t border-border py-12">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+      <footer className="border-t border-border py-8 sm:py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 sm:gap-8">
             <div>
               <div className="flex items-center gap-3 mb-3">
                 <img src="https://cdn.poehali.dev/projects/d39aeedb-ca02-475a-9633-00a6f3576ef3/bucket/3599c748-062b-4fa1-b301-2708c1d84e2c.png" alt="Доктор Мебелис" className="w-9 h-9 object-contain" style={{filter: 'brightness(0) invert(1)'}} />
@@ -512,7 +512,7 @@ export default function Index() {
               <p className="font-body text-xs text-muted-foreground max-w-xs">Производство корпусной мебели на заказ. Екатеринбург, с 2015 года.</p>
             </div>
 
-            <div className="flex flex-wrap gap-6">
+            <div className="flex flex-wrap gap-3 sm:gap-6">
               {navLinks.map(l => (
                 <a key={l.href} href={l.href} className="nav-link">{l.label}</a>
               ))}
