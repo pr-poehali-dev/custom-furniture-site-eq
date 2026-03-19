@@ -206,7 +206,7 @@
 
   .nav-link {
     font-family: "Golos Text", sans-serif;
-    font-size: 0.75rem;
+    font-size: 0.625rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: hsl(40 10% 65%);
