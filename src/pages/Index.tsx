@@ -84,9 +84,12 @@ export default function Index() {
       {/* NAVBAR */}
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-background/95 backdrop-blur-md border-b border-border" : "bg-transparent"}`}>
         <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
-          <a href="#" className="flex flex-col">
-            <span className="font-display text-xl font-light tracking-widest text-gold leading-none">ДОКТОР</span>
-            <span className="font-body text-[9px] tracking-[0.3em] uppercase text-muted-foreground">МЕБЕЛИС</span>
+          <a href="#" className="flex items-center gap-3">
+            <img src="https://cdn.poehali.dev/projects/d39aeedb-ca02-475a-9633-00a6f3576ef3/files/a2ca0d6a-bdfd-4ba5-922e-b60b3c467b7b.jpg" alt="Доктор Мебелис" className="w-10 h-10 object-cover rounded-sm" />
+            <div className="flex flex-col">
+              <span className="font-display text-xl font-light tracking-widest text-gold leading-none">ДОКТОР</span>
+              <span className="font-body text-[9px] tracking-[0.3em] uppercase text-muted-foreground">МЕБЕЛИС</span>
+            </div>
           </a>
 
           <div className="hidden lg:flex items-center gap-8">
@@ -499,9 +502,12 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
             <div>
-              <div className="flex flex-col mb-3">
-                <span className="font-display text-xl font-light tracking-widest text-gold leading-none">ДОКТОР</span>
-                <span className="font-body text-[9px] tracking-[0.3em] uppercase text-muted-foreground">МЕБЕЛИС</span>
+              <div className="flex items-center gap-3 mb-3">
+                <img src="https://cdn.poehali.dev/projects/d39aeedb-ca02-475a-9633-00a6f3576ef3/files/a2ca0d6a-bdfd-4ba5-922e-b60b3c467b7b.jpg" alt="Доктор Мебелис" className="w-9 h-9 object-cover rounded-sm" />
+                <div className="flex flex-col">
+                  <span className="font-display text-xl font-light tracking-widest text-gold leading-none">ДОКТОР</span>
+                  <span className="font-body text-[9px] tracking-[0.3em] uppercase text-muted-foreground">МЕБЕЛИС</span>
+                </div>
               </div>
               <p className="font-body text-xs text-muted-foreground max-w-xs">Производство корпусной мебели на заказ. Екатеринбург, с 2012 года.</p>
             </div>
