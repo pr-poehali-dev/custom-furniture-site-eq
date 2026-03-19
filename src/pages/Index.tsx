@@ -98,9 +98,9 @@ export default function Index() {
             ))}
           </div>
 
-          <a href="tel:+73432000000" className="hidden lg:flex items-center gap-2 text-gold hover:text-gold/80 transition-colors">
+          <a href="tel:+79678589131" className="hidden lg:flex items-center gap-2 text-gold hover:text-gold/80 transition-colors">
             <Icon name="Phone" size={14} />
-            <span className="font-body text-sm tracking-wide">+7 (343) 200-00-00</span>
+            <span className="font-body text-sm tracking-wide">+7 967 85 89 131</span>
           </a>
 
           <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden text-foreground p-2">
@@ -113,7 +113,7 @@ export default function Index() {
             {navLinks.map(l => (
               <a key={l.href} href={l.href} className="nav-link text-base" onClick={() => setMenuOpen(false)}>{l.label}</a>
             ))}
-            <a href="tel:+73432000000" className="text-gold font-body text-sm mt-2">+7 (343) 200-00-00</a>
+            <a href="tel:+79678589131" className="text-gold font-body text-sm mt-2">+7 967 85 89 131</a>
           </div>
         )}
       </nav>
@@ -426,10 +426,10 @@ export default function Index() {
 
               <div className="space-y-8">
                 {[
-                  { icon: "Phone", label: "Телефон", value: "+7 (343) 200-00-00", href: "tel:+73432000000" },
-                  { icon: "Mail", label: "Email", value: "info@art-mebel-ekb.ru", href: "mailto:info@art-mebel-ekb.ru" },
-                  { icon: "MapPin", label: "Адрес", value: "г. Екатеринбург, ул. Машиностроителей, 1", href: "#" },
-                  { icon: "Clock", label: "Режим работы", value: "Пн–Сб: 9:00 – 19:00", href: "#" },
+                  { icon: "Phone", label: "Телефон", value: "+7 967 85 89 131", href: "tel:+79678589131" },
+                  { icon: "Mail", label: "Email", value: "zakaz@dkub.ru", href: "mailto:zakaz@dkub.ru" },
+                  { icon: "MapPin", label: "Адрес", value: "г. Екатеринбург, ул. Крауля, 182", href: "#" },
+                  { icon: "Clock", label: "Режим работы", value: "Пн–Пн: 08:00 – 17:00", href: "#" },
                 ].map(c => (
                   <a key={c.label} href={c.href} className="flex items-start gap-5 group">
                     <div className="w-10 h-10 border border-border flex items-center justify-center flex-shrink-0 group-hover:border-gold transition-colors duration-200">
