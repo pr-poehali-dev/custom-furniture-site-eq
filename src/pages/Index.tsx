@@ -85,7 +85,7 @@ export default function Index() {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-background/95 backdrop-blur-md border-b border-border" : "bg-transparent"}`}>
         <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
           <a href="#" className="flex items-center gap-3">
-            <img src="https://cdn.poehali.dev/projects/d39aeedb-ca02-475a-9633-00a6f3576ef3/bucket/8f5dde29-645b-42e5-8c41-b9282e23cfd6.jpg" alt="Доктор Мебелис" className="w-10 h-10 object-contain rounded-full" />
+            <img src="https://cdn.poehali.dev/projects/d39aeedb-ca02-475a-9633-00a6f3576ef3/files/bfebc1c0-d56e-44fa-acc7-b0068428b78d.jpg" alt="Доктор Мебелис" className="w-12 h-12 object-contain" />
             <div className="flex flex-col">
               <span className="font-display text-xl font-light tracking-widest text-gold leading-none">ДОКТОР</span>
               <span className="font-body text-[9px] tracking-[0.3em] uppercase text-muted-foreground">МЕБЕЛИС</span>
