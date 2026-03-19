@@ -121,7 +121,7 @@ export default function Index() {
       {/* HERO */}
       <section className="relative h-screen min-h-[700px] flex items-end grain-overlay" id="home">
         <div className="absolute inset-0 overflow-hidden">
-          <img src={HERO_IMG} alt="Корпусная мебель на заказ" className="w-full h-full object-cover" />
+          <img src={HERO_IMG} alt="Корпусная мебель на заказ" className="w-full h-full object-cover scale-110" />
           <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-background/20" />
         </div>
@@ -187,7 +187,7 @@ export default function Index() {
               </div>
             </div>
             <div className="relative">
-              <img src={WARDROBE_IMG} alt="О студии Арт-Мебель" className="w-full h-[500px] object-cover" />
+              <img src={WARDROBE_IMG} alt="О студии Арт-Мебель" className="w-full h-[500px] object-cover scale-110" />
               <div className="absolute -bottom-6 -left-6 bg-card border border-border p-6 hidden lg:block">
                 <div className="font-display text-4xl text-gold font-light">10+</div>
                 <div className="font-body text-xs text-muted-foreground tracking-wide mt-1">лет опыта</div>
@@ -316,7 +316,7 @@ export default function Index() {
                 Получите предварительный расчёт за 30 секунд. Точная стоимость — после выезда замерщика.
               </p>
               <div className="border border-border p-1">
-                <img src={LIVING_IMG} alt="Пример мебели" className="w-full h-60 object-cover opacity-70" />
+                <img src={LIVING_IMG} alt="Пример мебели" className="w-full h-60 object-cover opacity-70 scale-110" />
               </div>
             </div>
 
